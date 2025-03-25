@@ -4,85 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ChasingOne AI Ad Services</title>
-  <style>
-    body { margin: 0; font-family: Helvetica, sans-serif; background-color: #ffffff; color: #000; scroll-behavior: smooth; }
-    .section { padding: 80px 20px; text-align: center; }
-    .hero { background-color: #002fa7; color: white; }
-    .cta { background-color: #f5f5f5; }
-    .pricing { display: flex; justify-content: center; gap: 40px; margin-top: 40px; flex-wrap: wrap; }
-    .card { border: 1px solid #ccc; border-radius: 12px; padding: 20px; width: 250px; background: white; }
-    .lang-toggle { position: fixed; top: 20px; right: 20px; }
-    form { max-width: 400px; margin: auto; display: flex; flex-direction: column; gap: 12px; }
-    input, textarea { padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 6px; }
-    button { padding: 12px; background-color: #002fa7; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; }
-    button:hover { background-color: #001e6e; }
-    a { color: #002fa7; }
-  </style>
+  <title>AI Advertising Site</title>
 </head>
-<body>
-  <div class="lang-toggle">
-    <button onclick="toggleLang()">EN / 中文</button>
-  </div>
-
-  <div class="section hero" id="home">
-    <h1 id="headline">Chase the future with AI</h1>
-    <p id="subline">Trust leads to Inovating.</p>
-  </div>
-
-  <div class="section cta" id="pricing">
-    <h2 id="pricing-title">Our Plans</h2>
-    <div class="pricing">
-      <div class="card">
-        <h3>Free</h3>
-        <p>Initial consultation</p>
-        <p>¥0</p>
-      </div>
-      <div class="card">
-        <h3>Standard</h3>
-        <p>Basic campaign setup</p>
-        <p>From ¥10,000</p>
-      </div>
-      <div class="card">
-        <h3>Pro</h3>
-        <p>Full-service AI ad delivery</p>
-        <p>Custom pricing</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section" id="contact">
-    <h2 id="contact-title">Contact Us</h2>
-    <p>Email: <a href="mailto:info@chasingone.cn">info@chasingone.cn</a></p>
-    <p><img src="qr-placeholder.png" alt="QR Code" width="120"/></p>
-    <form action="https://formspree.io/f/mwkgrzaz" method="POST">
-      <input type="text" name="name" placeholder="Your name" required />
-      <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" placeholder="Leave your message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </div>
-
-  <script>
-    let lang = 'en';
-    const en = {
-      headline: "Chase the future with AI",
-      subline: "This is your Apple-style landing page. Ready to go live.",
-      "pricing-title": "Our Plans",
-      "contact-title": "Contact Us"
-    };
-    const zh = {
-      headline: "用AI探索未来",
-      subline: "Apple风格的极简官网，已准备就绪。",
-      "pricing-title": "服务套餐",
-      "contact-title": "联系我们"
-    };
-    function toggleLang() {
-      lang = lang === 'en' ? 'zh' : 'en';
-      for (const id in en) {
-        document.getElementById(id).innerText = lang === 'en' ? en[id] : zh[id];
-      }
-    }
-  </script>
+<body style="font-family: sans-serif; text-align: center; padding: 50px;">
+  <h1>Welcome to ChasingOne AI Ad Services</h1>
+  <p>This is your Apple-style landing page. Ready to go live.</p>
 </body>
 </html>
